@@ -8,16 +8,12 @@ import { environment } from '../environments/environment';
 import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbMenuModule, NbCardModule, NbButtonModule, NbUserModule   } from '@nebular/theme';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MenuComponent
   ],
   imports: [
     BrowserModule,
