@@ -1,0 +1,25 @@
+<nb-layout>
+
+  <nb-layout-header fixed *ngIf="currentUser" >
+    <div class="grid-container">
+      <div class="grid-item">
+        <nb-user size="large"
+          name="John Doe"
+          title="Engineer"
+          picture=""></nb-user>
+      </div>
+      <div class="grid-item">
+        <button nbButton *ngIf="currentUser" status="info" size="tiny" (click)="logout()">Salir</button>
+      </div>
+    </div>
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed *ngIf="currentUser" >
+    Copyright XXX
+  </nb-layout-footer>
+
+</nb-layout>
