@@ -1,0 +1,25 @@
+
+<div class="grid">
+    <h2>Casos de Investigación</h2>
+    <div class="button-area">
+        <button nbButton status="primary" size="medium" (click)="casoAddRedirect()" >Nuevo Caso</button>
+    </div> 
+</div>
+
+
+<div class="grid" >
+        <nb-card accent="info" *ngFor = "let i of array">
+                <nb-card-header> Caso EECI-24345</nb-card-header>
+                <nb-card-body>
+                  Descripcion y detalles sobre el caso de Investigación.
+                  Acciones y detalles tomados por el investigador.
+                </nb-card-body>
+                <nb-card-footer>
+                  <nb-actions size="small">
+                    <nb-action nbTooltip="Registrar Avances" icon="file-text-outline"></nb-action>                    
+                    <nb-action nbTooltip="Ver detalles" icon="eye-off-2-outline"></nb-action>
+                  </nb-actions>
+                </nb-card-footer>
+        </nb-card>
+</div>
+

@@ -1,0 +1,41 @@
+<nb-card>
+    <nb-card-header> <h2>Crear Caso Investigación</h2></nb-card-header>
+    <nb-card-body>
+        <div class="grid">
+                <input type="text" nbInput fullWidth status="primary" placeholder="Investigador">            
+                <input type="text" nbInput fullWidth status="primary" placeholder="Fecha de inicio">
+                <input type="text" nbInput fullWidth status="primary" placeholder="Días">
+                <input type="text" nbInput fullWidth status="primary" placeholder="Mes">
+                <input type="text" nbInput fullWidth status="primary" placeholder="Móvil afectado">
+                <nb-select placeholder="Tipo Caso">
+                        <nb-option value="0">Caso</nb-option>
+                        <nb-option value="1">Gestion</nb-option>
+                        <nb-option value="2">Reclamo</nb-option>
+                </nb-select>
+                <nb-select placeholder="Tipo irregularidad">
+                        <nb-option value="0">Tipo1</nb-option>
+                        <nb-option value="1">Tipo2</nb-option>
+                        <nb-option value="2">Tipo3</nb-option>
+                </nb-select>
+                <nb-select placeholder="SubTipo irregularidad">
+                        <nb-option value="0">Tipo1</nb-option>
+                        <nb-option value="1">Tipo2</nb-option>
+                        <nb-option value="2">Tipo3</nb-option>
+                </nb-select>
+                <input type="text" nbInput fullWidth status="primary" placeholder="Objetivo">
+                <input type="text" nbInput fullWidth status="primary" placeholder="Área Apoyo">
+                <input type="text" nbInput fullWidth status="primary" placeholder="Detección">
+        </div>
+        <div class="grid2">
+                <textarea nbInput fullWidth placeholder="Diagnostico"></textarea>            
+                <textarea nbInput fullWidth placeholder="Detalle de Comprobación"></textarea>
+                <textarea nbInput fullWidth placeholder="Actuaciones"></textarea>
+                <textarea nbInput fullWidth placeholder="Conclusiones"></textarea>
+                <textarea nbInput fullWidth placeholder="Observaciones"></textarea>
+                <textarea nbInput fullWidth placeholder="Soporte"></textarea>
+        </div>
+        <div class="button-area">
+            <button nbButton status="primary" size="giant">Crear Caso</button>
+        </div>            
+    </nb-card-body>
+</nb-card>
